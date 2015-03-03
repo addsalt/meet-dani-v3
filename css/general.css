@@ -1,0 +1,301 @@
+/* CSS */
+
+* {margin: 0; padding: 0;}
+
+*,*:after,*::before {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0;}
+
+::selection {
+    background-color: #07ffe2;
+}
+
+.flex-img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html {font-size: 1em; width: 100%;}
+
+body {
+    background-color: white;
+    background-size: 100%; 
+    line-height: 1.35;
+    color: #ff0042;
+    width: 100%;
+    position: relative;
+}
+
+/* Who Dis */
+
+.whodis-holder {
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    color: #f2f2f2;
+}
+
+#whodis {
+    width: 100%;
+    position: relative;
+    margin-top: -100%;
+    border-bottom: 3px solid #07ffe2;
+    -webkit-transition: all 350ms cubic-bezier(.6,.39,.59,.85);
+    transition: all 350ms cubic-bezier(.6,.39,.59,.85);
+}
+
+#whodis p {
+    padding: 2rem 2.1rem;
+    background-color: #333;
+    margin: 0 auto;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#whodis p a {
+    color: #07ffe2;
+}
+
+#whodis[data-state="expanded"]{
+    margin-top:0;
+}
+
+.whodis-btn {
+    margin-top: 2rem;
+    font-weight: 800;
+    text-decoration: none;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    margin-left: -0.5rem;
+    background-color: #333;
+    text-align: center;
+    padding-top: 6px;
+}
+
+@media only screen and (min-width: 37.4375em) {
+
+    #whodis p {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 58.875em) {
+
+    #whodis p {
+        font-size: 2rem;
+    }
+}
+
+/* Typography */
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1, .uno {
+  margin-top: 6em;
+  font-size: 3.157em;
+}
+
+h2, .dos {font-size: 2.369em;}
+
+h3, .tres {font-size: 1.777em;}
+
+h4, .cuatro {font-size: 1.333em;}
+
+small, .font_small {font-size: 0.75em;}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Intro */
+
+#intro {
+    background-color: white;
+    overflow: auto;
+}
+
+.meetdani {
+    width: 15rem;
+    margin: 10rem auto;
+    text-align: center;
+}
+
+@media only screen and (min-width: 55em) {
+ 
+    .meetdani {
+        margin: 16rem auto;
+    }
+
+}
+
+@media only screen and (min-width: 75em) {
+ 
+    .meetdani {
+        margin: 18rem auto;
+    }
+
+}
+
+.logo-piece {
+    margin: 0.25rem 0.5rem;
+    height: 0.98em;
+    width: 0.98em;
+    
+    -webkit-transition: -webkit-transform 400s, opacity 0.2s;
+	-moz-transition: -moz-transform 400ms, opacity 0.2s;
+    -ms-transition: -moz-transform 400ms, opacity 0.2s;
+    -o-transition: -moz-transform 400ms, opacity 0.2s;
+	transition: transform 400ms, opacity 0.2s;
+    
+    -webkit-transform: rotateX(0);
+	-moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+	transform: rotateX(0);
+}
+
+@media only screen and (min-width: 55em) {
+    .logo-piece {
+        height: 1.25em;
+        width: 1.25em;
+    }
+}
+
+.logo-piece:hover {
+    -webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+/* Contact */
+
+.contact {
+    background: white url(../images/Dani_2.jpg) no-repeat bottom center;
+    background-size: cover;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+.contact-info {
+    margin: 7rem auto;
+}
+
+/* Icons */
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?63945642');
+  src: url('../font/fontello.eot?63945642#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?63945642') format('woff'),
+       url('../font/fontello.ttf?63945642') format('truetype'),
+       url('../font/fontello.svg?63945642#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    font-size: 2.3rem;
+    -webkit-transition: all 350ms cubic-bezier(.6,.39,.59,.85);
+    transition: all 350ms cubic-bezier(.6,.39,.59,.85);
+}
+
+[class^="icon-"]:hover:before, [class*=" icon-"]:hover:before {
+    opacity: .7;
+}
+
+.hide-text {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: 2.26rem;
+}
+ 
+.icon-tw:before { content: '\e801'; } 
+.icon-ig:before { content: '\e802'; } 
+.icon-li:before { content: '\e803'; } 
+
+
+.contact-p {
+    text-align: center;
+    width: 100%;
+    font-size: 1.85rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 45em) {
+    
+    .contact-p {
+        font-size: 3.85rem;
+    }
+    
+    .contact-info {
+        margin: 10rem auto;
+    }
+    
+    [class^="icon-"]:before, [class*=" icon-"]:before {
+        font-size: 3.7rem;
+    }
+    
+    .hide-text {
+        width: 3.7rem;
+    }
+    
+}
+
+@media only screen and (min-width: 63em) {
+    
+    .contact-info {
+        margin: 15rem auto;
+    }
+    
+}
+
+@media only screen and (min-width: 80em) {
+    
+    .contact-info {
+        margin: 18rem auto;
+    }
+    
+}
+
+.socialmedia {
+    text-align: center;
+}
+
+.socialmedia li {
+    display: inline-block;
+    margin: 1rem;
+}
