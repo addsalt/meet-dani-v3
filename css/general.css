@@ -42,21 +42,35 @@ body {
     width: 100%;
     position: relative;
     margin-top: -100%;
-    border-bottom: 3px solid #07ffe2;
+    background-color: #333;
+    border-bottom: 6px solid #00e0c6;
     -webkit-transition: all 250ms cubic-bezier(.6,.39,.59,.85);
     transition: all 250ms cubic-bezier(.6,.39,.59,.85);
 }
 
+.oh-hey {
+    width: 5rem;
+    padding-top: 2rem;
+    padding-left: 8px;
+}
+
 #whodis p {
-    padding: 2rem 2.1rem;
+    padding: 2rem 2.1rem 4rem;
     background-color: #333;
     margin: 0 auto;
     font-size: 1rem;
     width: 100%;
+    line-height: 1.45;
 }
 
 #whodis p a {
     color: #07ffe2;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#whodis p a:hover {
+    color: #ff5984;
 }
 
 #whodis[data-state="expanded"]{
@@ -73,10 +87,16 @@ body {
     position: absolute;
     bottom: -2rem;
     left: 50%;
-    margin-left: -0.5rem;
-    background-color: #333;
+    margin-left: -1rem;
+    background-color: #00e0c6;
     text-align: center;
     padding-top: 6px;
+}
+
+.whodis-btn:hover {
+    background-color: #00e0c6;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 .whodis-btn:after {
@@ -89,23 +109,29 @@ body {
     padding-top: 6px;
 }
 
-#whodis[data-state="expanded"].whodis-btn:after{
-    content: 'X';
-}
-
 @media only screen and (min-width: 37.4375em) {
 
+    
+    .oh-hey {
+        width: 7rem;
+        padding-top: 5rem;
+        padding-left: 8px;
+    }
+    
     #whodis p {
         font-size: 1.6rem;
+        padding: 1.5rem 3.6rem 6rem;
     }
 }
 
-@media only screen and (min-width: 58.875em) {
-
+@media only screen and (min-width: 70em) {
+    
     #whodis p {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        padding: 1.5rem 9rem 7.5rem;
     }
 }
+
 
 /* Typography */
 
